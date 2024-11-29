@@ -1,0 +1,15 @@
+from flask inmport flask , render_template
+
+#create a flassk instance
+app = Flask(__name__) -> finds all the files in the repository
+
+#create a route decorator it is something after web link like download,account,login,etc
+@app.route('/')
+@app.route('/user/<name>') -> access by this
+safe  ------>stuff = "my boy you are very<strong> Bold</strong>" will ot ignore strong tag
+capitalize
+lower
+upper
+title
+trim
+striptags
