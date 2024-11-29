@@ -11,10 +11,10 @@ def index():
                            favorite_pizza = favorite_pizza)
 @app.route('/user/<name>')
 #def user(name):
-#    return "<h1> gg {} boy,</h1>".format(name)
+#    return "<h1> gg {} boy,</h1>".format(name) and yoyo
 def user(name):
     return render_template("user.html",user_name = name)
-@app.errorhandler(404)
+@app.errorhandler(404) 
 def autoerror(e):
     return render_template("404.html"),404
 @app.errorhandler(500)
