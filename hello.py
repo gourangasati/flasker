@@ -11,7 +11,7 @@ def index():
                            favorite_pizza = favorite_pizza)
 @app.route('/user/<name>')
 #def user(name):
-#    return "<h1> gg {} boy,</h1>".format(name) and yoyo
+#    return "<h1> gg {} boy,</h1>".format(name) 
 def user(name):
     return render_template("user.html",user_name = name)
 @app.errorhandler(404) 
