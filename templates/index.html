@@ -1,7 +1,10 @@
-<h1>HEllo world</h1>
-<p> this is my first web page made by {{ F_name}} !!</p>
-<p>{{stuff|safe}} </p>
-<h2>Favorite things with pizza</h2>
-{% for thing in favorite_pizza%}
-{{thing}}</br>
-{%endfor%}
+{% extends 'base.html' %}
+{% block content %}
+<link href="{{url_for('static',filename='css/style.css')}}" rel = "stylesheet">
+<h1>What's your name</h1>
+<br/>
+<img src="{{ url_for('static',filename='images/trending.png')}}" width="1100">
+<p id="demo"> this is stuff</p>
+<script src ="{{url_for('static',filename='js/myfile.js')}}"></script>
+
+{% endblock %}

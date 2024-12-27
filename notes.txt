@@ -10,6 +10,30 @@ safe  ------>stuff = "my boy you are very<strong> Bold</strong>" will ot ignore 
 capitalize
 lower
 upper
-title
-trim
+title -------> capitalize first letter of words
+trim ---> remove spaces in the end or beginning 
 striptags
+
+{% for toppings in favarite_pizza%}
+{{toppings}}</br>
+{% endfor%}
+
+#invalid url --> 404
+#internal server error --> 500
+
+{% extends 'base.html'%} --> this jango template extends the base.html filr whereever called
+{% block content %} ---> these are used in html files after extends template code writeen between them will be used in base.html 
+    {%endblock%}
+
+we have pip install flask-wtf and importing things from it
+validators are something when we click on a button and something pop out thats a validator
+validator validate that the form is not empty and give message that this is  required and not filled
+
+we have to build csrf key to protect from hackers this is also called a secret key
+now we create a class form
+
+create a name page --> @app.route('/name',methods=['GET','POST'])
+
+importing flash messeges  
+
+sqlalchemy pip install karna padta hai informartion and data dko store karne me
