@@ -1,5 +1,5 @@
 from flask inmport flask , render_template
-
+#crete flask
 #create a flassk instance
 app = Flask(__name__) -> finds all the files in the repository
 
