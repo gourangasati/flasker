@@ -2,7 +2,7 @@ from flask inmport flask , render_template
 #crete flask
 #create a flassk instance
 app = Flask(__name__) -> finds all the files in the repository
-
+#updared flask application 
 #create a route decorator it is something after web link like download,account,login,etc
 @app.route('/')
 @app.route('/user/<name>') -> access by this
